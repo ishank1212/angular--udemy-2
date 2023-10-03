@@ -7,6 +7,9 @@ import { Component, OnInit, Input, OnChanges, SimpleChanges } from '@angular/cor
 })
 export class ServerElementComponent implements OnInit, OnChanges {
   @Input('srvElement') element: { type: string; name: string; content: string };
+  @Input() name: string;
+
+
   ngOnInit(): void {
     console.log('ngoninit called');
   }
